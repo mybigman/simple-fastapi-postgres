@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# start django server using uvicorn
+# start fastapi server using uvicorn
 if [ "$FASTAPI_DEBUG" = "True" ]; then
     uvicorn \
         --reload \
