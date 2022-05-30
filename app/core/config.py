@@ -33,6 +33,9 @@ class Settings(BaseSettings):
             path=f"/{values.get('POSTGRES_DB')}",
         )
 
+    # Pagination
+    PAGE_SIZE: int = 1000
+
     class Config:
         case_sensitive = True
 
